@@ -1,0 +1,9 @@
+node_modules
+.npmrc
+.DS_Store
+.sass-cache
+.publish
+public
+Desktop.ini
+**/generated/_icons.sass
+npm-debug.log
