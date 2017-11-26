@@ -1,0 +1,11 @@
+{
+  "name": "jarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.2.0",
+    "blendid": "^4.3.0",
+    "swiper": "^4.0.6"
+  }
+}

@@ -1,0 +1,41 @@
+.header__wrap {
+	position: fixed; 
+	background-color: #fff; 
+	z-index: 1000; 
+	width: 100%;
+	top: 0;
+}
+header {
+	display: inline-block;
+}
+
+.logo {
+	width: 200px;
+	height: 90px;
+	position: relative;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	&__title {
+		display: inline-block;
+		margin-left: 43px;
+		margin-top: 15px;
+	}
+	&__box-grey {
+		border: 5px solid #f2f2f2;
+		height: 70px;
+		width: 70px;
+		position: absolute;
+		display: inline-block;
+		z-index: -10;
+	}
+
+	&__box-blue{
+		border: 6px solid #97d1eb;
+		height: 32px;
+		width: 32px;
+		position: absolute;
+		top: 10px;
+		left: -25px;
+	}
+}

@@ -1,0 +1,205 @@
+{% from 'macros/helpers.html' import sprite %}
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{{ title }}{% endblock %}</title>
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+  {% include "shared/app-icons.html" %}
+  {% block head %}{% endblock %}
+</head>
+<body>
+  {% block header%}
+  <div class="header__wrap">
+    <header class="big-container nav__wrap">
+      <div class="logo">
+        <div class="logo__box-grey">
+          <div class="logo__box-blue"></div>
+        </div>
+        <h1 class="logo__title">Selene</h1>
+      </div>
+
+      <nav>
+        <div class="hamburger" id="hamburgerBtn">&#9776;</div>
+        <a class="menu" href="#">home</a>
+        <a class="menu" href="#">about us</a> 
+        <a class="menu" href="#">projects</a> 
+        <a class="menu" href="#">clients</a>
+        <a class="menu" href="#">contact</a>
+        <a class="menu" href="#">blog</a>
+      </nav>
+
+      <div class="nav--mobile" id="nav__overlay">
+        <span class="nav--mobile__close" id="closeBtn">X</span>
+        <a href="#">home</a>
+        <a href="#">about us</a> 
+        <a href="#">projects</a> 
+        <a href="#">clients</a>
+        <a href="#">contact</a>
+        <a href="#">blog</a>
+      </div>
+    </header>
+  </div>
+  <div class="container slider__wrap">
+
+    <div class="slider__text flex-cn">
+      <div class="slider__name" >John doe</div>
+      <div class="slider__number"><div class="swiper-pagination secondpagination" ></div></div>
+      <h1 class="slider__title" data-aos="fade-up">Architecture aims&nbsp;at&nbsp;<span class="word1" id="word1">eterninty</span> 
+        <span class="title__line" style="margin-bottom: 40px;"></span>
+      </h1>
+      <div class="swiper-pagination firstpagination" ></div>
+    </div>
+
+    <div class="swiper-container swiper--header">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image: url('../../images/slider__photo.jpg'); background-position: top;"></div>
+        <div class="swiper-slide" style="background-image: url('../../images/slider__photo-2.jpg');"></div>
+        <div class="swiper-slide" style="background-image: url('../../images/slider__photo-3.jpg'); background-position: top right;"></div> 
+        <div class="swiper-slide" style="background-image: url('../../images/slider__photo-4.jpg'); background-position: top right;"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="big-container container--content">
+    
+    <div class="content__col">
+      <h1 class="content__subtitle">Curabitur volutpat</h1>
+      <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lorem augue. Maecenas vehicula metus eros, et pellentesque justo ornare nec. Curabitur volutpat, quam in mollis luctus, enim risus ullamcorper libero, eu vehicula sapien nunc et tortor. </p>
+    </div>
+
+    <div  class="content__col flex-cn content__image">
+      <h1 data-aos="fade-up" class="content__title">We create cool ideas</h1>
+    </div>
+
+  </section>
+
+  <section class="big-container container--motto">
+
+    <div class="flex-cn motto__photo" style="background-image: url('../../images/motto-1.jpg');">
+      <div class="border-box"></div>
+      <h1 class="motto__title" data-aos="fade-right" data-aos-delay="0">Idea.</h1>
+    </div>
+
+    <div class="flex-cn motto__photo" style="background-image: url('../../images/motto-2.jpg');">
+      <div class="border-box"></div>
+      <h1 class="motto__title" data-aos="fade-right" data-aos-delay="50">Concept.</h1>
+    </div>
+
+    <div class="flex-cn motto__photo" style="background-image: url('../../images/motto-3.jpg');">
+      <div class="border-box"></div>
+      <h1 class="motto__title" data-aos="fade-right" data-aos-delay="100">Design.</h1>
+    </div>
+
+    <div class="flex-cn motto__photo" style="background-image: url('../../images/motto-4.jpg');">
+      <div class="border-box"></div>
+      <h1 class="motto__title" data-aos="fade-right" data-aos-delay="150">Develop</h1>
+    </div>
+
+  </section>
+
+  <section class="container" >
+    <h3 class="subtitle--lines"><span>How we work</span></h3>
+
+    <div class="wrap flex-motto">
+      <div class="flex-cn width-4">
+        <span class="motto__number">1</span>
+        <h1 data-aos="fade-up" class="motto__title">Dexterity</h1>
+      </div>
+      <div class="flex-cn width-4">
+        <span class="motto__number">2</span>
+        <h1 data-aos="fade-up" data-aos-delay="100" class="motto__title">Team</h1>
+      </div>
+      <div class="flex-cn width-4">
+       <span class="motto__number">3</span>
+       <h1 data-aos="fade-up"  data-aos-delay="200" class="motto__title">Partnership</h1>
+     </div>
+
+   </div>
+ </section>
+ <section class="container" style="margin-bottom: 100px;">
+   <h3 class="subtitle--lines"><span>Latest projects</span></h3>
+   <!-- second slider -->
+   <div class="swiper-container swiper--projects">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide">
+        <div class="projects__image" style="background-image: url('../../images/stairs.jpg'); "></div>
+        <div class="projects__info">
+          <h2 class="projects__subtitle">Modern art gallery</h2>
+          <h2 class="projects__subtitle">Warsaw, Poland</h2>
+          <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsa odio temporibus voluptatibus debitis excepturi fuga blanditiis fugit quos quaerat amet error alias rerum, eius, reprehenderit veniam sint architecto magnam.</p>
+          <button class="projects__button">Case Study</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="projects__image" style="background-image: url('../../images/stairs2.jpg');"></div>
+        <div class="projects__info" >
+          <h2 class="projects__subtitle">Modern art gallery</h2>
+          <h2 class="projects__subtitle">Berlin, Germany</h2>
+          <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsa odio temporibus voluptatibus debitis excepturi fuga blanditiis fugit quos quaerat amet error alias rerum, eius, reprehenderit veniam sint architecto magnam.</p>
+          <button class="projects__button">Case Study</button>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="projects__image" style="background-image: url('../../images/stairs3.jpg');"></div>
+        <div class="projects__info">
+          <h2 class="projects__subtitle">Modern art gallery</h2>
+          <h2 class="projects__subtitle">Stockholm, Sweden</h2>
+          <p class="projects__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsa odio temporibus voluptatibus debitis excepturi fuga blanditiis fugit quos quaerat amet error alias rerum, eius, reprehenderit veniam sint architecto magnam.</p>
+          <button class="projects__button">Case Study</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper--projects-arrows">
+      <div class="swiper--projects-button-next">
+        <img src="../../images/arrow.png" alt="right arrow" style="transform: rotate(180deg);">
+      </div>
+      <div class="swiper--projects-button-prev">
+        <img src="../../images/arrow.png" alt="left arrow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container clients">
+  <div class="clients__logo">
+    <img src="../../images/logos/logo-1.png" alt="" style="">
+    <img src="../../images/logos/logo-2.jpg" alt="" style="">
+    <img src="../../images/logos/logo-3.png" alt="" style="">
+    <img src="../../images/logos/logo-4.jpg" alt="" style="">
+    <img src="../../images/logos/logo-5.jpg" alt="" style="">
+    <img src="../../images/logos/logo-6.jpg" alt="" style="">
+  </div>
+</section>
+
+<section class="container form">
+  <div class="form__col">
+    <span class="form__tab">Contact us</span> <span class="form__tab">Phone</span> <span class="form__tab">E-mail</span>
+    <form action="/action_page.php" style="display: flex; flex-direction: column;">  
+      <input class="form__input" type="text" id="fname" name="firstname" placeholder="Name">
+      <input class="form__input" type="text" id="lname" name="lastname" placeholder="Phone">
+      <input class="form__input" type="text" id="lname" name="lastname" placeholder="E-mail">
+      <textarea class="form__input" name="" id="" cols="30" rows="7" style="font-size: 18px;"></textarea>
+      <input class="form__button" type="submit" value="Send">
+    </form>
+  </div>
+
+  <div class="form__photo">
+  </div>
+</section>
+
+{% endblock%}
+{% block content %}{% endblock %}
+{% block javascript %}
+<script src="javascripts/app.js"></script>
+{% endblock %}
+</body>
+</html>
