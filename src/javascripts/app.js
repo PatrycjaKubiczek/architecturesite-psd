@@ -1,6 +1,6 @@
 import './modules'
 import AOS from 'aos'
-import Swiper from 'swiper'
+import Swiper from 'swiper/dist/js/swiper.js';
 
 console.log(`app.js has loaded!`)
 
@@ -76,18 +76,18 @@ AOS.init();
   closeBtn.addEventListener('click', closeMenu);
 
 
-mySwiper.on('slideChange', function () {
-  console.log('slide changed');
-  console.log(mySwiper.realIndex);
-  if(mySwiper.realIndex == 1){
-    document.getElementById('word1').innerText = 'creativity';
-  }if(mySwiper.realIndex == 2){
-    document.getElementById('word1').innerText = 'inspiration';
-  }
-  if(mySwiper.realIndex == 3){
-    document.getElementById('word1').innerText = 'development';
-  }
-  if(mySwiper.realIndex == 0){
-    document.getElementById('word1').innerText = 'eternity';
-  }
-});
+  mySwiper.on('slideChange', function () {
+    console.log('slide changed');
+    console.log(mySwiper.realIndex);
+    if(mySwiper.realIndex == 1){
+      document.getElementById('word1').innerText = 'creativity';
+    }if(mySwiper.realIndex == 2){
+      document.getElementById('word1').innerText = 'inspiration';
+    }
+    if(mySwiper.realIndex == 3){
+      document.getElementById('word1').innerText = 'development';
+    }
+    if(mySwiper.realIndex == 0){
+      document.getElementById('word1').innerText = 'eternity';
+    }
+  });
